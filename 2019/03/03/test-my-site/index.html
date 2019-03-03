@@ -91,7 +91,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/03/test-my-site/" data-id="cjsstxx8y0001z46s77y73zkf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/03/test-my-site/" data-id="cjssv7d0r0001ck6surewbz4b" class="article-share-link">Share</a>
       
       
     </footer>
@@ -114,20 +114,20 @@
 
 
 
-<div id="gitment_container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-  var gitment = new Gitment({
-    id: 'test_my_site',
-    owner: 'HSDPA-wen',
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://yiyeti.cc/usr/themes/veryse/css/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'c22999349f5137093a9c',
+    clientSecret: 'f551310fc5f66aa0e3a0a9d025e08e127e34e620',
+    id: window.location.pathname,
     repo: 'HSDPA-wen.github.io',
-    oauth: {
-      client_id: 'c22999349f5137093a9c',
-      client_secret: 'f551310fc5f66aa0e3a0a9d025e08e127e34e620',
-    },
+    owner: 'HSDPA-wen',
+    admin: 'HSDPA-wen',
+    distractionFreeMode: 'true'
   })
-  gitment.render('gitment_container')
+  gitalk.render('gitalk-container')
 </script>
 
 </section>
